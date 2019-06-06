@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>w3.BBS - Create Account</title>
+    <link rel="stylesheet" href="{% static 'css/create_acct.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="create-form-div">
+        <span>Username:</span>
+        <input type="text" name="" value="">
+      </div>
+      <div class="create-form-div">
+        <span>Email Address:</span>
+        <input type="text" name="" value="">
+      </div>
+      <div class="create-form-div">
+        <span>Location:</span>
+        <input type="text" name="" value="">
+      </div>
+      <div class="create-form-div">
+        <span>Password:</span>
+        <input type="password" name="" value="">
+      </div>
+      <div class="create-form-div">
+        <span>Confirm Password:</span>
+        <input type="password" name="" value="">
+      </div>
+      <div class="create-form-div">
+        <span id="create-ok">OK</span>
+        <span id="create-cancel">Cancel</span>
+      </div>
+      <div class="create-form-div">
+        <span id="create-status">Username already exists.</span>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/msg_detail.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <span class="msg-date-label">Date:</span>
+      <span class="msg-date-data"></span>
+      <span class="msg-user-label">Posted By:</span>
+      <span class="msg-user-data"></span>
+      <span class="msg-subject-label">Subject:</span>
+      <span class="msg-subject-data"></span>
+      <span class="msg-body-data"></span>
+    </div>
+    <div id="reply-div" class="container">
+      <span class="msg-date-label">Date:</span>
+      <span class="msg-date-data"></span>
+      <span class="msg-user-label">Posted By:</span>
+      <span class="msg-user-data"></span>
+      <!--span class="msg-subject-label">Subject:</span-->
+      <span class="msg-subject-data"></span>
+      <span class="msg-body-data"></span>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/msg_details.js' %}"></script>
+  </body>
+</html>

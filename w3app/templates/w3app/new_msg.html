@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Message</title>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+  </head>
+  <body>
+    <div class="new-msg-container">
+        <div id="topic-div" class="">
+          <span>Topic: </span>
+          <span id="msg-topic">General Messages</span>          
+        </div>
+
+        <div id="msg-subject-div" class="">
+          <label for="msg-subject">Subject:</label>
+          <input type="text" name="msg-subject" id="msg-subject" value="">
+        </div>
+      <input id="msg-body" value=""></input>
+      <div id="save-btn">
+        <span>Save</span>
+      </div>
+      <div id="cancel-btn">
+        <span>Cancel</span>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/test.js' %}"></script>
+  </body>
+</html>

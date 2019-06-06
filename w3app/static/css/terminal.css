@@ -1,0 +1,19 @@
+body, html {
+  border: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 22% 1fr 22%;
+  background: black;
+}
+
+#terminal {
+  grid-column: 2;
+  min-height: 90vh;
+}
+
+.terminal {
+  --size: 1.25;
+}

@@ -1,0 +1,35 @@
+html, * {
+  border: 0;
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: 35% 1fr 35%;
+}
+.container {
+  grid-column: 2;
+  grid-row: 2;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+}
+#username-input {
+  margin-right: 1em;
+}
+#create-acct {
+  margin-right: 0.5em;
+}
+.option-div {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  margin: auto;
+  padding-top: 1em;
+}
+#status-msg {
+  padding-top: 1em;
+  margin: auto;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}

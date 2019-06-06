@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST PAGE</title>
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+          <span>Now Viewing:
+            <span id="topic-name"></span>
+          </span>
+          <span>
+            <span id="topic-desc"></span>
+          </span>
+          <!--span>Top Posters:
+              <span>admin, someguy, testuser</span>
+          </span-->
+        </div>
+        <div id="messages-div" class="">
+          <div id="messages-header">
+                <span id="header-date">Date</span>
+                <span id="header-user">User</span>
+                <span id="header-title">Title</span>
+          </div>
+            {% for message in messages %}
+            <div class="message">
+                <span class="msg-date">{{ message.msg_date }}</span>
+                <span class="msg-author">{{ message.msg_author }}</span>
+                <span class="msg-title">{{ message.msg_title }}</span>
+                <span class="msg-body">{{ message.msg_body }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="footer">
+            <span id="footer-index">Displaying Messages:
+                <span>0</span>
+                <span>-</span>
+                <span>10</span>
+            </span>
+            <span id="footer-new">(N)ew Message</span>
+            <span id="footer-topics">(R)eturn to Topics</span>
+            <span id="footer-quit">(Q)uit to Main Menu</span>
+            <span id="footer-next">| Next Message</span>
+            <span id="footer-prev">^ Previous Message</span>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

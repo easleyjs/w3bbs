@@ -1,0 +1,7 @@
+{% extends 'w3app/base.html' %}
+{% load static %}
+{% block content %}
+    <div id="terminal" class=""></div>
+    <span id="username" style="display: none;">{{ user.get_username }}</span>
+    <script type="text/javascript" src="{% static 'js/bbs.js' %}"></script>
+{% endblock %}
